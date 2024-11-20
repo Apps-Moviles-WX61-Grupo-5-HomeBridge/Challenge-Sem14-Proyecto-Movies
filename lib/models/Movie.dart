@@ -2,6 +2,7 @@ class Movie{
   int? id;
   String? overview;
   double? popularity;
+  String? posterPath;
   String? title;
   String? realeaseDate;
   bool? isFavorite;
@@ -10,6 +11,7 @@ class Movie{
     this.id,
     this.overview,
     this.popularity,
+    this.posterPath,
     this.title,
     this.realeaseDate,
     this.isFavorite,
@@ -19,6 +21,7 @@ class Movie{
     id = json['id'];
     overview = json['overview'];
     popularity = json['popularity'];
+    posterPath = json['poster_path'];
     title = json['title'];
     realeaseDate = json['realeaseDate'];
     isFavorite = json['isFavorite'];
@@ -29,6 +32,7 @@ class Movie{
     data['id'] = this.id;
     data['overview'] = this.overview;
     data['popularity'] = this.popularity;
+    data['poster_path'] = this.posterPath;
     data['title'] = this.title;
     data['realeaseDate'] = this.realeaseDate;
     data['isFavorite'] = this.isFavorite;
